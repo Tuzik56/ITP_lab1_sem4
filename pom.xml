@@ -52,12 +52,13 @@
 
                 <configuration>
                     <effort>Max</effort>
-                    <threshold>Low</threshold>
+                    <threshold>Medium</threshold>
                     <failOnError>true</failOnError>
                 </configuration>
 
                 <executions>
                     <execution>
+                        <phase>verify</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>

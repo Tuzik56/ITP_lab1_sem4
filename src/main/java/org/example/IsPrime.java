@@ -29,6 +29,8 @@ public class IsPrime {
         //Десериализация
         PrimeResult deserializedResult = mapper.readValue(json, PrimeResult.class);
         log.info(deserializedResult.getPrimes().toString());
+
+        bugExample();
     }
 
     public static boolean isPrime(int n) {
@@ -41,5 +43,10 @@ public class IsPrime {
             i++;
         }
         return true;
+    }
+
+    public static void bugExample() {
+        String s = null;
+        s.length();
     }
 }
